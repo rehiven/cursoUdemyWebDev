@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <button class="nav-button" onclick="hidebutton()">Menu</button>
+        <a href="#" class="nav-link hide">Inicio</a>
+        <a href="#" class="nav-link hide">Nosotros</a>
+        <a href="#" class="nav-link hide">Servicios</a>
+        <a href="#" class="nav-link hide">Contacto</a>
+    </nav>
+    <script>
+        function hidebutton(){
+            var ancla = document.getElementsByClassName("nav-link");
+            for (let i = 0; i < ancla.length; i++) {
+                ancla[i].classList.toggle("hide")
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+nav{
+    background: aquamarine;
+    padding: 50px;
+}
+
+.colum{
+    background: burlywood;
+    color: black;
+    padding: 20px;
+    width: 25%;
+    margin: 10px;
+}
+
+.flexp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button{
+    background: #639a67;
+    color: black;
+}
+button:hover{
+    background: cadetblue;
+}
+button:active{
+    background: chartreuse;
+}
+h1{
+    display: inline-block
+}
+
+.block{
+    display: block;
+}

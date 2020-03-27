@@ -1,82 +1,175 @@
 *{
-    margin: 10px;
-    padding: 10px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 body{
     font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
 }
 .container{
     display: flex;
     flex-flow: column nowrap;
 }
 
+.margin-inside{
+    padding: 0 50px;
+}
 .header{
-    background: #000;
+    background:url(../imagenes/bg-2.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
     display: flex;
     flex-flow: column nowrap;
 }
     .menu{
+        background: rgba(0, 0, 0, .1);
         display: flex;
         flex-flow: row nowrap;
-        background: #2d4059;
-        height: 100px;
+        height: 60px;
         align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+        border: 2px solid #fff;
     }
     .logo{
-        background: #ea5455;
         flex: 1 1 auto;
-        height: 30px;
     }
+        .logo a{
+            color: #fff;
+            font-size: 30px;
+        }
+        .logo a:hover{
+            color: #343434;
+        }
     .nav{
-        background: #ea5455;
         flex: 5 1 auto;
-        height: 30px
     }
+        .nav a{
+            color: #fff;
+            font-size: 11px;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 2px;
+        }
+        .nav a:hover{
+            color: #343434;
+        } 
     .social{
-        background: #ea5455;
         flex: 1 1 auto;
-        height: 30px
+        display: flex;
+    }
+    .social a{
+        font-size: 18px;
+        color: #fff;
+        padding: 0 5px;
+    }
+    .social a:hover{
+        color: #343434;
     }
     .main-text{
-        background: #f07b3f;
+      /*background: #f07b3f;*/
+      height: 580px;
+      display: flex;
+      align-items: center;
     }
         h1{
-            background: #ffd460;
+            font-family: 'Lora', serif;
+            font-size: 21px;
+            color: #fff;
+            font-weight: 300;
+            text-align: center;
+            line-height: 1.6;
         }
 .section{
-    background: #000;
+    background: #f7f7f7;
     display: flex;
 }
     .articles{
-        background: #4e4e6a;
-        flex: 2 1 auto;
+        background: #f7f7f7;
+        flex: 2 1 70%;
         display: flex;
         flex-flow: row wrap;
     }
         .article{
-            background: #1f6cb0;
             flex:  1 1 40%;
+            color: #444;
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin: 10px 10px 0 0px;
+            background: #ececec;
+        }
+        .article img{
+            width: 100%;
+        }
+        .article a{
+            color: #fff;
+            font-size: 13px;
+            padding: 10px;
+            background: #000;
+            margin: 10px 0;
+            display: inline-block;
+        }
+        .article a:hover{
+            background: #546cc3;
+        }
+        h3{
+            color: #fff;
+            font-size: 13px;
+            padding: 10px 0;
+            margin-top: -80px;
+        }
+        h2{
+            font-size: 25px;
+            text-transform: uppercase;
+            padding: 0px 0 10px 0;
+            color: #fff;
         }
         .navigation{
-                background: #70a3c4;
-                flex: 1 1 100%;
+                background: #000;
+                flex:1 1 100%;
+                margin: 10px 10px 0 0px;
+        }
+        .navigation a{
+            color: #fff;
+            font-size: 11px;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 2px;
         }
     .aside{
-            background: #f73f52;
-            flex: 1 1 auto;
+            flex: 1 1 30%;
+            margin: 10px 5px 10px 0;
     }
-    .advertising{
-        background: #ffea85;
-    }
+        .aside img{
+            width: 100%;
+        }
+        h4{
+            background: #000;
+            color: #fff;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+        .advertising{
+          /**/
+        }
 .footer{
     background: #000;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
     .toe{
-        background: #e6af2e;
-        width: 300px;
+        text-align: center;
+    }
+    .toe a{
+        color: #fff;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 2px;
     }
 
     @media all and (max-width: 800px){

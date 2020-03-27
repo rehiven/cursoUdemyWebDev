@@ -172,9 +172,10 @@ a{
         letter-spacing: 2px;
     }
 
-    @media all and (max-width: 800px){
+    @media all and (max-width: 1120px){
         .section{
             flex-direction: column;
+            
         }
         .menu{
             flex-direction: column;
@@ -184,12 +185,23 @@ a{
             display: flex;
             justify-content: center;
         }
+        h1{
+            font-size: 15px;
+        }
     }
 
-    @media all and (max-width: 600px){
+    @media all and (max-width: 762px){
         .articles{
             flex-direction: column;
         }
+        h1{
+            font-size: 15px;
+        }
+    }
+
+    @media all and (max-width: 650px){
+        .off{ display: none; }
+        .nav a{ font-size: 25px; }
     }
 
     @media all and (max-width: 400px){
